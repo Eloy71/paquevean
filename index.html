@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-es">
+<head>
+    <title>InSession</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    
+    <link rel="icon" href="/img/ISOLOGO.png" type="image/x-icon">
+</head>
+
+<body class="cuerpo">
+    <header class="head">
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark sticky-top">
+            <div class="container-fluid">
+                <img src="/paginaprincipal/img/LOGORECORTADOELOY.png" alt="" class="logox">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#queesinsession">¿Qué es InSession?</a>
+                        <a class="nav-link" href="#porqueinsesion">¿Por qué InSession?</a>
+                        <a class="nav-link" href="#quienessomos">¿Quiénes somos?</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </div>
+                    <a class="nav-link btn btn-primary text-white" href="/inicio_de_seccion.html" id="pruebanos">¡Pruébanos!</a>
+                </div>
+                
+            </div>
+           
+        </nav>
+    </header>
+
+    <style>
+   
+    </style>
+
+    <!-- Carrusel -->
+    <div class="container" >
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/paginaprincipal/img/FOTO1.png" class="d-block w-100 rounded-3" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Conéctate de manera única</h5>
+                        <p>Descubre lo que InSession puede hacer por ti.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/paginaprincipal/img/FOTO2.png" class="d-block w-100 rounded-3" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Comparte música fácilmente</h5>
+                        <p>La mensajería se combina con lo mejor del audio.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/paginaprincipal/img/FOTO3.png" class="d-block w-100 rounded-3" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Diseñado para ti</h5>
+                        <p>Una experiencia completamente personalizada.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Secciones con animaciones -->
+    <header class="content-header">
+        <!-- Título centrado -->
+        <h2 id="queesinsession">¿Qué es InSession? </h2>
+        <!-- Descripción con un enfoque más largo y detallado -->
+        <p>InSession es una plataforma revolucionaria que combina mensajería instantánea y herramientas de entretenimiento. Diseñada para aquellos que buscan comunicarse de manera efectiva, compartir música y disfrutar de funciones únicas como bots inteligentes, InSession es un espacio seguro e innovador para conectarse con amigos, familiares y colegas de todo el mundo. Prioriza la privacidad, la seguridad y la interacción intuitiva.</p>
+        <!-- Botones interactivos -->
+        <div class="btn-home">
+            <button class="btn" onclick="showOverlay('Misión', 'Nuestra misión es ser la herramienta líder en comunicación digital, fomentando la creatividad y la conexión en todo el mundo.')">Misión</button>
+            <button class="btn" onclick="showOverlay('Visión', 'Nuestra visión es innovar constantemente, priorizando la privacidad y seguridad de nuestros usuarios, mientras lideramos en tecnología de comunicación.')">Visión</button>
+        </div>
+    </header>
+
+    <!-- Contenedor para mostrar "Misión" y "Visión" -->
+     <!-- Eloy Tiene una idea -->
+    <div id="overlay" onclick="hideOverlay()">
+        <div id="overlay-content">
+            <h3 id="overlay-title"></h3> <!-- Título dinámico -->
+            <p id="overlay-text"></p> <!-- Texto dinámico -->
+        </div>
+    </div>
+
+    <section class="content section"> <!-- Sección "¿Porqué InSession?" -->
+        <h2 class="title" id="porqueinsesion">¿Porqué InSession?</h2> <!-- Título principal -->
+        <p> <!-- Descripción -->
+            InSession busca proporcionar una comunicación libre y sin problemas donde los usuarios/consumidores
+            puedan abiertamente hablar sin problemas en cualquier momento. La plataforma busca ser una herramienta
+            eficaz para la comunicación entre los usuarios.
+        </p>
+    
+        <div class="box-container"> <!-- Contenedor para los recuadros -->
+    
+            <div class="box" data-aos="zoom-in"> <!-- Récuadro con animación de zoom al aparecer -->
+                <h3>Mensajería en tiempo real</h3> <!-- Título del recuadro -->
+                <p>Comunicación instantánea entre usuarios, con notificaciones en tiempo real.</p> <!-- Descripción -->
+            </div>
+    
+            <div class="box" data-aos="zoom-in"> <!-- Otro recuadro -->
+                <h3>Seguridad garantizada</h3>
+                <p>Mensajes encriptados de extremo a extremo para mantener la privacidad de las conversaciones.</p>
+            </div>
+    
+            <div class="box" data-aos="zoom-in"> <!-- Otro recuadro -->
+                <h3>¡Bot Musical!</h3>
+                <p>Bot que busca contenido musical y lo reproduce.</p>
+            </div>
+    
+            <div class="box" data-aos="zoom-in"> <!-- Otro recuadro -->
+                <h3>Soporte y desarrollo constante</h3>
+                <p>Los desarrolladores junto la comunidad están en actualización constante y sustento de la plataforma.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="content section" id="quienes_somos">
+        <!-- Título centrado -->
+        <h2 id="quienessomos">¿Quiénes somos?</h2>
+        <!-- Descripción extendida -->
+        <p>
+            Somos un grupo de estudiantes del Instituto Universitario Politécnico Santiago Mariño, apasionados por la programación 
+            y comprometidos con el desarrollo de soluciones tecnológicas innovadoras. Nuestro objetivo es crear plataformas que 
+            simplifiquen la vida de las personas y fomenten la conectividad. Bajo el nombre de "ExagonCode", buscamos llevar la 
+            creatividad y la funcionalidad a un nuevo nivel en el mundo digital.
+        </p>
+        <!-- Contenedor para los botones -->
+        <div class="btn-home">
+            <button class="btn" onclick="showOverlay('ExagonCode','ExagonCode es un grupo de programadores estudiantiles que desde aproximadamente dos años están en desarrollo de multiples plataformas y aplicaciones. Actualmente se mantiene bajo perfil.')">
+                ¿ExagonCode?</button>
+            <button class="btn" onclick="showOverlay('Desarrolladores', 'Eloy Malave, Francisco Magnifico, Marlon Alvarado.')">
+                Desarrolladores</button>
+        </div>
+        <!-- Modal para mostrar contenido -->
+        <div id="modal" class="modal" onclick="hideModal()">
+        <div class="modal-content" onclick="event.stopPropagation();">
+             <span id="modal-text"></span>
+        </div>
+    </div>
+    </section>
+
+    
+
+    <section class="content contact">
+        <!-- Título centrado -->
+        <h2 id="contacto">Contáctanos</h2>
+        <!-- Botón para acceder al servidor de Discord -->
+         <p>¡Accede al siguiente link y unete a nuestra comunidad de discord!</p>
+        <div class="button-container">
+            <button class="btn" onclick="window.open('https://discord.gg/Xk5uAQfB', '_blank')">Discord</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <!-- Pie de página con enlaces a redes sociales -->
+        <h2>Síguenos</h2>
+        <ul>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li> <!-- Enlace a Facebook -->
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li> <!-- Enlace a Instagram -->
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li> <!-- Enlace a Twitter -->
+        </ul>
+        <p>© 2024 "InSession". Todos los derechos reservados.</p> <!-- Derechos de autor -->
+    </footer>
+
+
+
+
+
+<!-- Scripts externos, no tocar -->
+<script>
+    // Función para mostrar el cuadro emergente con el contenido de "Misión" o "Visión"
+    // <!-- Eloy Tiene una idea -->
+    function showOverlay(title, text) {
+        document.getElementById('overlay-title').innerText = title;
+        document.getElementById('overlay-text').innerText = text;
+        document.getElementById('overlay').style.display = 'block';
+    }
+
+    // Función para ocultar el cuadro emergente
+    function hideOverlay() {
+        document.getElementById('overlay').style.display = 'none';
+    }
+
+    
+</script>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); /* Inicializa las animaciones */
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+        // Inicializa las animaciones de desplazamiento
+    </script>
+</body>
+
+</html>
